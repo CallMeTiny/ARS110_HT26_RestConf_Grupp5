@@ -1,0 +1,25 @@
+
+
+=================================================================================
+========================== patch_cisco_grund ====================================
+=================================================================================
+
+=========== 1.1.1.1 =============
+YANG =  Cisco-IOS-XE-native:native
+response.status_code =  204
+response.text =  
+
+=========== 1.1.1.2 =============
+YANG =  Cisco-IOS-XE-native:native
+response.status_code =  401
+response.text =  {
+  "errors": {
+    "error": [
+      {
+        "error-tag": "access-denied",
+        "error-type": "protocol"
+      }
+    ]
+  }
+}
+

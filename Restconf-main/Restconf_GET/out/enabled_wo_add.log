@@ -1,0 +1,32 @@
+=========CHECKING ROUTING===========
+========= OVERBY =========
+ERRORS:
+OSPF_ERR: MISSING OSPF ROUTES ON OVERBY
+========= TRESTAD =========
+ERRORS:
+CORRECT: No routing errors found on TRESTAD
+========= TORP =============
+ERRORS:
+CORRECT: No routing errors found on TORP
+IF_ERR: Enabled without addressing: TRESTAD.S0/1/1
+IF_ERR: Enabled without addressing: TORP.GigabitEthernet0/0/1
+IF_ERR: Enabled without addressing: TORP.S0/1/1
+
+============= MISSING 4 INTERFACE DESCRIPTIONS =============
+TRESTAD/GigabitEthernet0
+TRESTAD/Serial0/1/1
+TORP/GigabitEthernet0/0/1
+TORP/Serial0/1/1
+Remainding interfaces have descriptions configured
+
+============= CHECKING SUBNET CONFIGURATION =============
+PASS: NO DUPLICATE ADDRESSING
+CORRECT SUBNETTING: 2 OF /30, 1 OF /26, 1 OF /24 
+
+NO ERRORS FOUND IN SUBNETTING
+
+=========CHECKING OSPF AUTH FOR TORP/OVERBY INTERFACES=============
+Correctly configured OSPF authentication interfaces:
+CORRECT: OVERBY/GigabitEthernet0/0/1
+CORRECT: OVERBY/GigabitEthernet0/0/0
+CORRECT: TRESTAD/GigabitEthernet0/0/1

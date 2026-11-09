@@ -1,0 +1,32 @@
+#TORP: no ip route 192.168.42.0 255.255.255.252; no ip route 192.168.42.192 255.255.255.192
+ 
+ 
+=========CHECKING ROUTING===========
+========= OVERBY =========
+ERRORS:
+CORRECT: No routing errors found on OVERBY
+========= TRESTAD =========
+ERRORS:
+CORRECT: No routing errors found on TRESTAD
+========= TORP =============
+ERRORS:
+ROUTE_ERR: LACKING STATIC ROUTES ON TORP
+
+============= MISSING 3 INTERFACE DESCRIPTIONS =============
+OVERBY/GigabitEthernet0/0/1
+TRESTAD/Serial0/1/1
+TORP/GigabitEthernet0/0/1
+Remainding interfaces have descriptions configured
+
+============= CHECKING SUBNET CONFIGURATION =============
+PASS: NO DUPLICATE ADDRESSING
+CORRECT SUBNETTING: 2 OF /30, 1 OF /26, 1 OF /24 
+
+NO ERRORS FOUND IN SUBNETTING
+
+=========CHECKING OSPF AUTH FOR TORP/OVERBY INTERFACES=============
+Correctly configured OSPF authentication interfaces:
+CORRECT: OVERBY/GigabitEthernet0/0/0
+CORRECT: OVERBY/GigabitEthernet0/0/1
+CORRECT: TRESTAD/Serial0/1/1
+CORRECT: TRESTAD/GigabitEthernet0/0/0

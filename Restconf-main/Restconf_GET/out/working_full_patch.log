@@ -1,0 +1,27 @@
+======== CHECKING ACL COMPLIANCE ===========
+PASS: ACL correctly block HostBK at 192.168.11.10/32
+=========CHECKING ROUTING===========
+========= OVERBY =========
+ERRORS:
+CORRECT: No routing errors found on OVERBY
+========= TRESTAD =========
+ERRORS:
+CORRECT: No routing errors found on TRESTAD
+========= TORP =============
+ERRORS:
+CORRECT: No routing errors found on TORP
+
+All active interfaces have descriptions
+
+============= CHECKING SUBNET CONFIGURATION =============
+PASS: NO DUPLICATE ADDRESSING
+CORRECT SUBNETTING: 2 OF /30, 1 OF /26, 1 OF /24 
+
+NO ERRORS FOUND IN SUBNETTING
+
+=========CHECKING OSPF AUTH FOR TORP/OVERBY INTERFACES=============
+Correctly configured OSPF authentication interfaces:
+CORRECT: OVERBY/GigabitEthernet0/0/1
+CORRECT: OVERBY/GigabitEthernet0/0/0
+CORRECT: TRESTAD/Serial0/1/0
+CORRECT: TRESTAD/GigabitEthernet0/0/1

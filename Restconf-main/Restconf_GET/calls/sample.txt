@@ -1,0 +1,114 @@
+{
+  "openconfig-acl:acl-sets": {
+    "acl-set": [
+      {
+        "name": "BLOCK_TELNET",
+        "type": "openconfig-acl:ACL_IPV4",
+        "config": {
+          "name": "BLOCK_TELNET",
+          "type": "openconfig-acl:ACL_IPV4"
+        },
+        "state": {
+          "name": "BLOCK_TELNET",
+          "type": "openconfig-acl:ACL_IPV4"
+        },
+        "acl-entries": {
+          "acl-entry": [
+            {
+              "sequence-id": 10,
+              "config": {
+                "sequence-id": 10
+              },
+              "state": {
+                "sequence-id": 10,
+                "matched-packets": "0",
+                "matched-octets": "0"
+              },
+              "ipv4": {
+                "config": {
+                  "source-address": "192.168.11.10/32",
+                  "protocol": "openconfig-packet-match-types:IP_TCP"
+                },
+                "state": {
+                  "protocol": "openconfig-packet-match-types:IP_TCP"
+                }
+              },
+              "transport": {
+                "config": {
+                  "source-port": "ANY",
+                  "destination-port": 23
+                },
+                "state": {
+                  "source-port": "ANY",
+                  "destination-port": 23
+                }
+              },
+              "actions": {
+                "config": {
+                  "forwarding-action": "openconfig-acl:DROP",
+                  "log-action": "openconfig-acl:LOG_NONE"
+                },
+                "state": {
+                  "forwarding-action": "openconfig-acl:DROP",
+                  "log-action": "openconfig-acl:LOG_NONE"
+                }
+              }
+            },
+            {
+              "sequence-id": 20,
+              "config": {
+                "sequence-id": 20
+              },
+              "state": {
+                "sequence-id": 20,
+                "matched-packets": "443",
+                "matched-octets": "443"
+              },
+              "ipv4": {
+                "config": {
+                  "protocol": "cisco-xe-openconfig-acl-ext:IP"
+                },
+                "state": {
+                  "protocol": "cisco-xe-openconfig-acl-ext:IP"
+                }
+              },
+              "transport": {
+                "config": {
+                  "source-port": "ANY",
+                  "destination-port": "ANY"
+                },
+                "state": {
+                  "source-port": "ANY",
+                  "destination-port": "ANY"
+                }
+              },
+              "actions": {
+                "config": {
+                  "forwarding-action": "openconfig-acl:ACCEPT",
+                  "log-action": "openconfig-acl:LOG_NONE"
+                },
+                "state": {
+                  "forwarding-action": "openconfig-acl:ACCEPT",
+                  "log-action": "openconfig-acl:LOG_NONE"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "meraki-fqdn-dns",
+        "type": "openconfig-acl:ACL_IPV4",
+        "config": {
+          "name": "meraki-fqdn-dns",
+          "type": "openconfig-acl:ACL_IPV4"
+        },
+        "state": {
+          "name": "meraki-fqdn-dns",
+          "type": "openconfig-acl:ACL_IPV4"
+        }
+      }
+    ]
+  }
+}
+

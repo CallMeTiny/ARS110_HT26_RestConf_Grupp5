@@ -1,0 +1,24 @@
+START_CONF
+
+======= curl ========
+curl.exe -vk https://192.168.1.1/restconf
+
+curl.exe -k -u admin:Network!337 -H "Accept: application/yang-data+json" "https://192.168.1.1/restconf/data/Cisco-IOS-XE-native:native/"
+
+======= Setup =======
+enable
+configure terminal
+
+restconf
+ip http secure-server
+ip http authentication local
+!ip http tls-version TLSv1.2
+!ip http secure-ciphersuite ecdhe-rsa-aes-gcm-sha2
+
+username admin privilege 15 secret Network!337
+
+aaa new-model
+aaa authentication login default local
+aaa authorization exec default local
+
+

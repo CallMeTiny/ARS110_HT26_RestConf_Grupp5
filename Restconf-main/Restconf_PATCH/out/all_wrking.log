@@ -1,0 +1,175 @@
+
+
+=================================================================================
+========================== patch_cisco_grund ====================================
+=================================================================================
+
+=========== 1.1.1.1 =============
+YANG =  Cisco-IOS-XE-native:native
+response.status_code =  204
+response.text =  
+
+=========== 1.1.1.2 =============
+YANG =  Cisco-IOS-XE-native:native
+response.status_code =  204
+response.text =  
+
+=========== 1.1.1.3 =============
+YANG =  Cisco-IOS-XE-native:native
+response.status_code =  204
+response.text =  
+
+
+=================================================================================
+========================== patch_cisco_serial ===================================
+=================================================================================
+
+=========== 1.1.1.2 =============
+YANG =  Cisco-IOS-XE-native:native/interface/Serial=0%2F1%2F0
+response.status_code =  204
+response.text =  
+
+=========== 1.1.1.2 =============
+YANG =  Cisco-IOS-XE-native:native/interface/Serial=0%2F1%2F1
+response.status_code =  204
+response.text =  
+
+=========== 1.1.1.2 no shutdown =============
+YANG = Cisco-IOS-XE-native:native/interface/Serial=0%2F1%2F0
+response.status_code = 404
+response.text = 
+
+=========== 1.1.1.3 =============
+YANG =  Cisco-IOS-XE-native:native/interface/Serial=0%2F1%2F0
+response.status_code =  204
+response.text =  
+
+=========== 1.1.1.3 =============
+YANG =  Cisco-IOS-XE-native:native/interface/Serial=0%2F1%2F1
+response.status_code =  204
+response.text =  
+
+=========== 1.1.1.3 no shutdown =============
+YANG = Cisco-IOS-XE-native:native/interface/Serial=0%2F1%2F0
+response.status_code = 404
+response.text = 
+
+
+=================================================================================
+========================== patch_ietf_ACL =======================================
+=================================================================================
+
+=========== 1.1.1.3 =============
+YANG =  openconfig-acl:acl
+response.status_code =  204
+response.text =  
+
+
+=================================================================================
+========================== ospf_native ==========================================
+=================================================================================
+
+=========== 1.1.1.1 =============
+YANG =  Cisco-IOS-XE-native:native/router
+response.status_code =  204
+response.text =  
+
+=========== 1.1.1.1 =============
+YANG =  Cisco-IOS-XE-native:native/interface/GigabitEthernet=0%2F0%2F0
+response.status_code =  204
+response.text =  
+
+=========== 1.1.1.1 =============
+YANG =  Cisco-IOS-XE-native:native/interface/GigabitEthernet=0%2F0%2F1
+response.status_code =  204
+response.text =  
+
+=========== 1.1.1.2 =============
+YANG =  Cisco-IOS-XE-native:native/router
+response.status_code =  204
+response.text =  
+
+=========== 1.1.1.2 =============
+YANG =  Cisco-IOS-XE-native:native/interface/GigabitEthernet=0%2F0%2F1
+response.status_code =  204
+response.text =  
+
+
+=================================================================================
+========================== patch_ietf_routing ===================================
+=================================================================================
+
+=========== 1.1.1.2 =============
+YANG =  ietf-routing:routing/routing-instance=default/routing-protocols
+response.status_code =  204
+response.text =  
+
+=========== 1.1.1.3 =============
+YANG =  ietf-routing:routing/routing-instance=default/routing-protocols
+response.status_code =  204
+response.text =  
+
+
+=================================================================================
+========================== patch_ietf_interface =================================
+=================================================================================
+
+=========== 1.1.1.1 =============
+YANG =  ietf-interfaces:interfaces
+response.status_code =  204
+response.text =  
+
+=========== 1.1.1.1 =============
+YANG =  ietf-interfaces:interfaces
+response.status_code =  204
+response.text =  
+
+=========== 1.1.1.1 save =============
+SAVE running --> startup
+response.status_code = 200
+response.text = {
+  "cisco-ia:output": {
+    "result": "Save running-config successful"
+  }
+}
+
+
+=========== 1.1.1.2 =============
+YANG =  ietf-interfaces:interfaces
+response.status_code =  204
+response.text =  
+
+=========== 1.1.1.2 =============
+YANG =  ietf-interfaces:interfaces
+response.status_code =  204
+response.text =  
+
+=========== 1.1.1.2 save =============
+SAVE running --> startup
+response.status_code = 200
+response.text = {
+  "cisco-ia:output": {
+    "result": "Save running-config successful"
+  }
+}
+
+
+=========== 1.1.1.3 =============
+YANG =  ietf-interfaces:interfaces
+response.status_code =  204
+response.text =  
+
+=========== 1.1.1.3 =============
+YANG =  ietf-interfaces:interfaces
+response.status_code =  204
+response.text =  
+
+=========== 1.1.1.3 save =============
+SAVE running --> startup
+response.status_code = 200
+response.text = {
+  "cisco-ia:output": {
+    "result": "Save running-config successful"
+  }
+}
+
